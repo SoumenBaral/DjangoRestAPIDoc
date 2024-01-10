@@ -81,12 +81,4 @@ pip install django-filter  # Filtering support
 
 </details>
 
-+---------+
-|         |
-|  Box    |
-|         |
-+---------+
-
-
-
 
