@@ -108,7 +108,7 @@ After Creating a Model Every time we have  makemigrations and migrate and regist
 ![serializer](serialzer.webp)
 
 
- ### Model Serializer
+ ## Model Serializer
  
    - we can work with multiple method (GET,POST,PUT/PATCH,DELETE) via ModelSerializer
        - PUT : We can update whole model via put method
@@ -125,7 +125,7 @@ class AppointmentSerializer(serializers.ModelSerializer):
         fields = '__all__'
 ```
 
-#### Views for ModelViewSet
+## Views for ModelViewSet
 
 ```bash
 from django.shortcuts import render
@@ -137,7 +137,7 @@ class AppointmentViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.AppointmentSerializer
 ```
 
-# Custom Query set in Views.py
+## Custom Query set in Views.py
 ```bash
 from django.shortcuts import render
 from . import models , serializers
@@ -162,6 +162,19 @@ class AppointmentViewSet(viewsets.ModelViewSet):
         if doctor_id:
             queryset = queryset.filter(doctor_id=doctor_id)
         return queryset
+```
+
+## Urls.py
+```bash
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from .views import AppointmentViewSet
+router = DefaultRouter() # Our Router
+router.register(r'list', AppointmentViewSet) # Antenna Of Router
+urlpatterns = [
+    path('',include(router.urls))
+
+]
 ```
 
 </details>
