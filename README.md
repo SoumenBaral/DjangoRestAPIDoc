@@ -20,9 +20,9 @@
   
 
 </details>
- ┌ ─------------ ┐
+ ┌ ───────────── ┐
  | Stutas code   |
- └-------------- ┘
+ └───────────────┘
 
  Right Arrow: → (`&rarr;` in HTML)
 - Left Arrow: ← (`&larr;` in HTML)
