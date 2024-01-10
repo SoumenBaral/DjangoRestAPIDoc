@@ -6,7 +6,7 @@
  REST API is  Representational State Transfer Application Programming Interface
 
  # REST API Have 4 points
-  - End point
+  - End point ( last point from the base ulr where an API or service can be accessed)
   - Method
   - Headers
   - Data 
