@@ -22,7 +22,7 @@
 </details>
 
 <details>
-<summary><h3 style="color: blue;">Installation & Essential Stuf </h3></summary>
+<summary><h3 style="color: blue;">Installation & Essential Stuff </h3></summary>
 
   
 ## Run 
@@ -80,3 +80,13 @@ pip install django-filter  # Filtering support
 
 
 </details>
+
++---------+
+|         |
+|  Box    |
+|         |
++---------+
+
+
+
+
