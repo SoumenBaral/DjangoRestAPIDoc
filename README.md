@@ -102,6 +102,8 @@ After Creating a Model Every time we have  makemigrations and migrate and regist
   
 Serializers are used to convert complex data types, such as Django model instances, into Python data types that can be easily rendered into JSON, XML, or other content types.
 
+![serializer](https://example.com/images/example.jpg)
+
  
 
 
