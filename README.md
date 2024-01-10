@@ -10,8 +10,8 @@
   - Method ( POST, PUT/PATCH, GET, DELETE)
      - POST      : POST for creating data --- C
      - PUT/PATCH : PUT for updating data  --- U
-     - GET       : GET for retrieve data  --- R
-     - DELETE    : DELETE for delete data --- D
+     - GET       : GET for retrieving data  --- R
+     - DELETE    : DELETE for deleting data --- D
        <p>Together these four operations make up the basic operations of storage management known as CRUD: Create, Read, Update and Delete</p>   
   - Headers
   - Data 
