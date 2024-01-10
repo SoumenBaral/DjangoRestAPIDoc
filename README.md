@@ -69,6 +69,17 @@ pip install django-filter
 ```bash
 django-admin startapp Myapp
 ```
+
+- register the app
+    - It is mendatory to register the app after create App Everytime 
+
+```bash
+ INSTALLED_APPS = [
+    ...
+    'Myapp',
+]
+```
+
 - Then Create A Model
   
 ```bash
@@ -82,6 +93,7 @@ class Service(models.Model):
     def __str__(self) -> str:
         return self.name
 ```
+After Creating a Model Every time we have  makemigrations and migrate and register it in Admin panel  
 
 </details>
 <details>
