@@ -14,7 +14,7 @@
      - GET       : GET for retrieving data  --- R
      - DELETE    : DELETE for deleting data --- D
        
-       <p>Together these four operations make up the basic operations of storage management known as CRUD</p>   
+     <p>Together these four operations make up the basic operations of storage management known as CRUD</p>   
   - Headers
   - Data 
   
