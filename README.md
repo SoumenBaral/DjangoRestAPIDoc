@@ -15,7 +15,8 @@
      - DELETE : DELETE for deleting data --- D
        
      <p>Together these four operations make up the basic operations of storage management known as CRUD</p>   
-  - Headers 
+  - Headers
+          <p>headers provide additional information about the request or the response.</p>
   - Data 
   
 
