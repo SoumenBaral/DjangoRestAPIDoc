@@ -16,7 +16,7 @@
        
      <p>Together these four operations make up the basic operations of storage management known as CRUD</p>   
   - Headers
- <p>headers provide additional information about the request or the response.</p>
+        <p>headers provide additional information about the request or the response.</p>
   - Data 
   
 
