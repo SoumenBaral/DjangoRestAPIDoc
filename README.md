@@ -24,9 +24,18 @@
 
 ```bash
 pip install djangorestframework
-pip install markdown       # Markdown support for the browsable API.
-pip install django-filter  # Filtering support
 ```
+ - Markdown support for the browsable API.
+   
+```bash
+pip install markdown       
+```
+ - Filtering support
+   
+```bash
+pip install django-filter  
+```
+
 
  - Go to Sattings.py and register the app
 
