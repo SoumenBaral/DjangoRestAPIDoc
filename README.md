@@ -107,7 +107,19 @@ After Creating a Model Every time we have  makemigrations and migrate and regist
 
 ![serializer](serialzer.webp)
 
- 
+
+ ### Model Serializer
+
+```bash
+from rest_framework import serializers
+from . import models 
+
+class AppointmentSerializer(serializers.ModelSerializer):
+#    patient = serializers.StringRelatedField(many=False)
+   class Meta:
+        model = models.Appointment
+        fields = '__all__'
+```
 
 
 </details>
