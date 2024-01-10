@@ -15,7 +15,7 @@
      - DELETE : DELETE for deleting data --- D
        
      <p>Together these four operations make up the basic operations of storage management known as CRUD</p>   
-  - Headers
+  - Headers 
   - Data 
   
 
@@ -52,7 +52,24 @@ pip install django-filter
     'rest_framework',
 ]
 ```
+- Then Create A App 
 
+```bash
+django-admin startapp Myapp
+```
+- Then Create A Model
+  
+```bash
+from django.db import models
+
+class Service(models.Model):
+    name = models.CharField(max_length =30)
+    description =models.TextField()
+    image = models.ImageField(upload_to='service/images/') 
+
+    def __str__(self) -> str:
+        return self.name
+```
 
 </details>
 <details>
@@ -61,13 +78,7 @@ pip install django-filter
   
 Serializers are used to convert complex data types, such as Django model instances, into Python data types that can be easily rendered into JSON, XML, or other content types.
 
- - Install Django  REST Framework
-
-```bash
-pip install djangorestframework
-pip install markdown       # Markdown support for the browsable API.
-pip install django-filter  # Filtering support
-```
+ 
 
  - Go to Sattings.py and register the app
 
