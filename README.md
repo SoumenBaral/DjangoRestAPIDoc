@@ -21,7 +21,6 @@
         | Status      | Description     |
         | :--------   | :---------------|
         | 200         | ok              |
-
         | 404         | Page not Found
 
           
