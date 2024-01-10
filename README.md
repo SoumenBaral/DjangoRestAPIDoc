@@ -7,7 +7,11 @@
 
  # REST API Have 4 points
   - End point ( last point from the base ulr where an API or service can be accessed)
-  - Method
+  - Method ( POST, PUT/PATCH, GET, DELETE)
+     - POST :
+     - PUT/PATCH:
+     - GET :
+     - DELETE :
   - Headers
   - Data 
   
