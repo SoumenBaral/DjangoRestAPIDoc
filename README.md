@@ -109,6 +109,10 @@ After Creating a Model Every time we have  makemigrations and migrate and regist
 
 
  ### Model Serializer
+ 
+   - we can work with multiple method (GET,POST,PUT/PATCH,DELETE)
+       - PUT : We can update whole model via put method
+       - PATCH : Slide change .
 
 ```bash
 from rest_framework import serializers
@@ -121,6 +125,17 @@ class AppointmentSerializer(serializers.ModelSerializer):
         fields = '__all__'
 ```
 
+#### Views for ModelViewSet
+
+```bash
+from django.shortcuts import render
+from . import models , serializers
+from rest_framework import viewsets
+
+class AppointmentViewSet(viewsets.ModelViewSet):
+    queryset = models.Appointment.objects.all()
+    serializer_class = serializers.AppointmentSerializer
+```
 
 </details>
 
