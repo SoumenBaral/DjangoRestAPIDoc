@@ -17,17 +17,16 @@
      <p>Together these four operations make up the basic operations of storage management known as CRUD</p>   
   - Headers
         <p>headers provide additional information about the request or the response.</p>
+        
      - Status Code:
         | Status      | Description     |
         | :--------   | :---------------|
         | 200         | ok              |
-        | 404         | Page not Found
+        | 404         | Page not Found  |
+        | 505         | Server Error    |
 
           
     
-            - 200 ok
-            - 404 
-            - 505 Server Error
     
   - Data 
   
