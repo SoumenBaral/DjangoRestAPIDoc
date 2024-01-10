@@ -24,31 +24,30 @@ pip install django-filter  # Filtering support
 ]
 ```
 
- - Create A new App
+
+</details>
+
+<summary><h3 style="color: blue;">Serializers</h3></summary>
+
+  
+Serializers are used to convert complex data types, such as Django model instances, into Python data types that can be easily rendered into JSON, XML, or other content types.
+
+ - Install Django  REST Framework
 
 ```bash
-  django-admin startapp myApp
+pip install djangorestframework
+pip install markdown       # Markdown support for the browsable API.
+pip install django-filter  # Filtering support
 ```
 
- - Migrations
-
-```bash
- python3 manage.py makemigrations
-```
- - Migrate
+ - Go to Sattings.py and register the app
 
 ```bash
- python3 manage.py migrate
+ INSTALLED_APPS = [
+    ...
+    'rest_framework',
+]
 ```
-
-- Create Superuser 
-```bash
-  python3 manage.py createsuperuser
-```
-- Run Server
- ```bash
-  python3 manage.py runserver
- ```
 
 
 </details>
