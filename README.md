@@ -26,7 +26,7 @@ pip install django-filter  # Filtering support
 
 
 </details>
-
+<details>
 <summary><h3 style="color: blue;">Serializers</h3></summary>
 
   
