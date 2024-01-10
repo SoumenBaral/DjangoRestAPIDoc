@@ -20,9 +20,6 @@
   
 
 </details>
- ┌ ───────────── ┐
- |               |
- └───────────────┘
 
 <details>
 <summary><h3 style="color: blue;">Installation & Essential Stuf </h3></summary>
