@@ -24,7 +24,7 @@
 - Left Arrow: ← (`&larr;` in HTML)
 - Up Arrow: ↑ (`&uarr;` in HTML)
 - Down Arrow: ↓ (`&darr;` in HTML)
-
+->
 <details>
 <summary><h3 style="color: blue;">Installation & Essential Stuf </h3></summary>
 
