@@ -12,7 +12,7 @@
      - PUT/PATCH : PUT for updating data  --- U
      - GET       : GET for retrieve data  --- R
      - DELETE    : DELETE for delete data --- D
-       Together these four operations make up the basic operations of storage management known as CRUD: Create, Read, Update and Delete   
+       <p>Together these four operations make up the basic operations of storage management known as CRUD: Create, Read, Update and Delete</p>   
   - Headers
   - Data 
   
