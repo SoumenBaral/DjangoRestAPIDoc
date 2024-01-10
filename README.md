@@ -100,7 +100,8 @@ After Creating a Model Every time we have  makemigrations and migrate and regist
 <details>
 <summary><h3 style="color: blue;">Serializers</h3></summary>
 
-  
+Model Data ------Serialization---> JSON
+JSON -> JavaScript Object Notation
 Serializers are used to convert complex data types, such as Django model instances, into Python data types that can be easily rendered into JSON, XML, or other content types.
 
 ![serializer](serialzer.webp)
