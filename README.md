@@ -1,5 +1,18 @@
 ![logo](https://soshace.com/wp-content/uploads/2021/01/879-png-3.png)
 
+<details>
+<summary><h3 style="color: blue;">REST API</h3></summary>
+ 
+ REST API is  Representational State Transfer Application Programming Interface
+
+ # REST API Have 4 points
+  - End point
+  - Method
+  - Headers
+  - Data 
+  
+
+</details>
 
 <details>
 <summary><h3 style="color: blue;">Installation & Essential Stuf </h3></summary>
