@@ -110,7 +110,7 @@ After Creating a Model Every time we have  makemigrations and migrate and regist
 
  ### Model Serializer
  
-   - we can work with multiple method (GET,POST,PUT/PATCH,DELETE)
+   - we can work with multiple method (GET,POST,PUT/PATCH,DELETE) via ModelSerializer
        - PUT : We can update whole model via put method
        - PATCH : Slide change .
 
