@@ -15,10 +15,13 @@ pip install markdown       # Markdown support for the browsable API.
 pip install django-filter  # Filtering support
 ```
 
- - Create A new Project 
+ - Go to Sattings.py and register the app
 
 ```bash
-  django-admin startproject myproject
+ INSTALLED_APPS = [
+    ...
+    'rest_framework',
+]
 ```
 
  - Create A new App
