@@ -24,17 +24,6 @@
  | Stutas code   |
  └───────────────┘
 
- Right Arrow: → (`&rarr;` in HTML)
-- Left Arrow: ← (`&larr;` in HTML)
-- Up Arrow: ↑ (`&uarr;` in HTML)
-- Down Arrow: ↓ (`&darr;` in HTML)
-- Horizontal Line: ─
-  - Vertical Line: │
-  - Top Left Corner: 
-  - Top Right Corner: ┐
-  - Bottom Left Corner: 
-  - Bottom Right Corner: ┘
-
 <details>
 <summary><h3 style="color: blue;">Installation & Essential Stuf </h3></summary>
 
