@@ -137,7 +137,7 @@ class AppointmentViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.AppointmentSerializer
 ```
 
-## Custom Query set in Views.py
+#### Custom Query set in Views.py
 ```bash
 from django.shortcuts import render
 from . import models , serializers
