@@ -8,10 +8,11 @@
  # REST API Have 4 points
   - End point ( last point from the base ulr where an API or service can be accessed)
   - Method ( POST, PUT/PATCH, GET, DELETE)
-     - POST :
-     - PUT/PATCH:
-     - GET :
-     - DELETE :
+     - POST      : POST for creating data --- C
+     - PUT/PATCH : PUT for updating data  --- U
+     - GET       : GET for retrieve data  --- R
+     - DELETE    : DELETE for delete data --- D
+       Together these four operations make up the basic operations of storage management known as CRUD: Create, Read, Update and Delete   
   - Headers
   - Data 
   
