@@ -56,7 +56,7 @@ pip install django-filter
 ```
 
 
- - Go to Sattings.py and register the app
+ - Go to Settings.py and register the app
 
 ```bash
  INSTALLED_APPS = [
@@ -71,7 +71,7 @@ django-admin startapp Myapp
 ```
 
 - register the app
-    - It is mendatory to register the app after create App Everytime 
+    - It is mandatory to register the app after create App every time 
 
 ```bash
  INSTALLED_APPS = [
@@ -102,7 +102,7 @@ After Creating a Model Every time we have  makemigrations and migrate and regist
   
 Serializers are used to convert complex data types, such as Django model instances, into Python data types that can be easily rendered into JSON, XML, or other content types.
 
-![serializer](https://example.com/images/example.jpg)
+![serializer](serialzer.webp)
 
  
 
