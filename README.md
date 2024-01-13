@@ -199,7 +199,7 @@ urlpatterns = [
 <summary><h3 style="color: blue;">Authentication</h3></summary>
   <details>
       <summary><h4 style="color: blue;">Registration</h4></summary>
-   ####Task : 
+   #### Task : 
          1. Import User from django contrib auth models 
          2. 
    
