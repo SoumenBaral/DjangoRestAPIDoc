@@ -246,7 +246,7 @@ class RegistrationSerializer(serializers.ModelSerializer):
         account.is_active= False
         account.save()
         return account
-    ```
+```
         
         
    
