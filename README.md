@@ -255,7 +255,54 @@ class RegistrationSerializer(serializers.ModelSerializer):
   2. Then we need the Serilizer calss there we will inharit all the field from serializer
   3. We are paly with Post so we need to implement post function
   4. we need to to grap all the data from serializer calas via data.request and store it Serializer variable
-  5. if siralizer Variable is currect all info for post request then we have to save the siralizer in data base and we will store it another variable that can be user 
+  5. if siralizer Variable is currect all info for post request then we have to save the siralizer in data base and we will store it another variable that can be user
+  6. We will genarate Token an Uid and make a confirmation mail via token and uid64 after endpoint we will use it active/{uid}/{token}
+  7. Then we will work with sending email the is prity simple . we need to crate a app via 2 step vaifications and get the password for email and set it in .evn we need email body ,email that get the value from EmailMultiAlternatives function and this function take 3 parameter and attach alternative and finally send the email to activate the account
+  8. if all is ok and send a ok response and if error then send and error Respose
+
+  #### Code :
+
+```bash
+from .serializers import PatientSerializer,RegistrationSerializer
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from django.contrib.auth.tokens import default_token_generator
+from django.utils.http import urlsafe_base64_encode,urlsafe_base64_decode
+from django.utils.encoding import force_bytes
+from django.contrib.auth.models import User
+from django.contrib.auth import authenticate,login,logout
+from rest_framework.authtoken.models import Token
+# For sending Email
+
+from django.core.mail import EmailMultiAlternatives
+from django.template.loader import render_to_string
+
+
+class UserRegistrationApiView(APIView):
+    serializer_class  = RegistrationSerializer
+    
+
+    def post(self,request):
+        serializer = self.serializer_class(data=request.data)
+
+        if serializer.is_valid():
+            user = serializer.save()
+            print(user)
+            token = default_token_generator.make_token(user)
+
+            print('Token: ' ,token)
+            uid = urlsafe_base64_encode(force_bytes(user.pk))
+            print("Uid : ", uid)
+            confirm_link = f"http://127.0.0.1:8000/patient/active/{uid}/{token}"
+            email_subject = "Confirm Your Email"
+            email_body = render_to_string('confirmEmail.html',{"ConfirmLink" : confirm_link})
+            email = EmailMultiAlternatives(email_subject,'',to=[user.email])
+            email.attach_alternative(email_body,'text/html')
+            email.send()
+            return Response('Check Your Mail for Confirmation')
+      
+        return Response(serializer.errors)
+```
  
  
   
