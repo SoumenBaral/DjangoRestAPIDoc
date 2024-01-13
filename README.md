@@ -195,4 +195,37 @@ urlpatterns = [
 
 </details>
 
+<details>
+<summary><h3 style="color: blue;">Authentication</h3></summary>
+ 
+ REST API is  Representational State Transfer Application Programming Interface
+
+ # REST API Have 4 points
+  - End point ( last point from the base ulr where an API or service can be accessed)
+  - Method ( POST, PUT/PATCH, GET, DELETE)
+    
+     - POST : POST for creating data --- C
+     - PUT : PUT for updating data  --- U
+     - GET : GET for retrieving data  --- R
+     - DELETE : DELETE for deleting data --- D
+       
+     <p>Together these four operations make up the basic operations of storage management known as CRUD</p>   
+  - Headers
+        <p>headers provide additional information about the request or the response.</p>
+        
+     - Status Code:
+        | Status      | Description     |
+        | :--------   | :---------------|
+        | 200         | ok              |
+        | 404         | Page not Found  |
+        | 505         | Server Error    |
+
+          
+    
+    
+  - Data
+     <p>Which Data we wil send frontend to BackEnd</p>
+  
+
+</details>
 
