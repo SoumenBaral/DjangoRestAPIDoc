@@ -263,7 +263,7 @@ class RegistrationSerializer(serializers.ModelSerializer):
   #### Code :
 
 ```bash
-from .serializers import PatientSerializer,RegistrationSerializer
+from .serializers import RegistrationSerializer
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from django.contrib.auth.tokens import default_token_generator
