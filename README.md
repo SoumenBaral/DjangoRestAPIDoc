@@ -200,7 +200,7 @@ urlpatterns = [
   <details>
       <summary><h4 style="color: blue;">Registration</h4></summary>
    
-  ### Task For Registration Serializer  : 
+  #### Task For Registration Serializer  : 
          
   - 1. Import User from django contrib auth models
     2. Make a class for registraion and inharit ModelSerializer from serializers
@@ -249,7 +249,13 @@ class RegistrationSerializer(serializers.ModelSerializer):
 ```
         
         
-   
+   #### Task For Registration View   :  
+     
+  1. We will use  APIView for our Registration view class Just because we will play with Post reques not any kind of request . We also can use ModelviewSet for simplicity we will use APIview
+  2. Then we need the Serilizer calss there we will inharit all the field from serializer
+  3. We are paly with Post so we need to implement post function
+  4. we need to to grap all the data from serializer calas via data.request and store it Serializer variable
+  5. if siralizer Variable is currect all info for post request then we have to save the siralizer in data base and we will store it another variable that can be user 
  
  
   
