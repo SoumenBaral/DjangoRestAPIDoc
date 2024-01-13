@@ -247,7 +247,7 @@ class RegistrationSerializer(serializers.ModelSerializer):
         account.save()
         return account
 ```
-        
+   <h3> Views </h3>
         
    #### Task For Registration View   :  
      
