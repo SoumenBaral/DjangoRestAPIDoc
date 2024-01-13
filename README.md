@@ -200,7 +200,7 @@ urlpatterns = [
   <details>
       <summary><h4 style="color: blue;">Registration</h4></summary>
    
-  ### Task : 
+  ### Task For Registration Serializer  : 
          
   - 1. Import User from django contrib auth models
     2. Make a class for registraion and inharit ModelSerializer from serializers
@@ -209,7 +209,44 @@ urlpatterns = [
     4. In Meta Class we will Work with User models and take the field that we need . In User 
           modele there is no field for confirm Password that the reason we have to build it vai 
           serializers.CharFirld
-    5.  
+    5. We have to save the info to database that why we have call the save funtion . Grap all the value from the field vai validated_data insted of cleaned_data in form class we use validated_data for  serializer
+    6. Now we have to compaire the password and Confirm Password is they equal or not . if not then raise the error
+    7. we have to filter the email and have to ensure that this is not exists in our database
+    8. Then  We have to update the User and set the pass and by delault the creating account will be is_active false we set it trure via email and finally seve the acount and retun account
+
+    #### Code :
+
+```bash
+from rest_framework import serializers
+from django.contrib.auth.models import User
+
+
+class RegistrationSerializer(serializers.ModelSerializer):
+    confirm_password = serializers.CharField(required = True)
+    class Meta:
+        model = User
+        fields = ['username','first_name','last_name','email','password','confirm_password']
+
+    def save(self):
+        username = self.validated_data['username']
+        first_name = self.validated_data['first_name']
+        last_name = self.validated_data['last_name']
+        password = self.validated_data['password']
+        password2 = self.validated_data['confirm_password']
+        email = self.validated_data['email']
+
+        if password!=password2:
+            raise serializers.ValidationError({"error":"Password Does not Match "})
+        if User.objects.filter(email=email).exists():
+            raise serializers.ValidationError({"error":"Email Already Exist  "})
+        
+        account = User(username= username,email=email,first_name=first_name,last_name=last_name)
+        print(account)
+        account.set_password(password)
+        account.is_active= False
+        account.save()
+        return account
+    ```
         
         
    
