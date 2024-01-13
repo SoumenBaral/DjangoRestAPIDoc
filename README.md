@@ -206,7 +206,10 @@ urlpatterns = [
     2. Make a class for registraion and inharit ModelSerializer from serializers
     3. Make a Meta class - (The Meta class is a conventional name for a class inside another 
              class that is used to hold metadata or configuration options.)
-    4. ok
+    4. In Meta Class we will Work with User models and take the field that we need . In User 
+          modele there is no field for confirm Password that the reason we have to build it vai 
+          serializers.CharFirld
+    5.  
         
         
    
