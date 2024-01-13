@@ -202,7 +202,7 @@ urlpatterns = [
    
   #### Task For Registration Serializer  : 
          
-  - 1. Import User from django contrib auth models
+   1. Import User from django contrib auth models
     2. Make a class for registraion and inharit ModelSerializer from serializers
     3. Make a Meta class - (The Meta class is a conventional name for a class inside another 
              class that is used to hold metadata or configuration options.)
