@@ -1,6 +1,6 @@
 ![logo](https://soshace.com/wp-content/uploads/2021/01/879-png-3.png)   
 
-<details>
+<details> 
 <summary><h3 style="color: blue;">REST API</h3></summary>
  
  REST API is  Representational State Transfer Application Programming Interface
