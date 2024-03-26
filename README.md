@@ -31,7 +31,11 @@
   - Data
      <p>Which Data we wil send frontend to BackEnd</p>
   
+### APIView,generics. * , ModelViewSet   which one should you use when? My rule of thumb is,
 
+ - Use viewsets.ModelViewSet when you are going to allow all or most of CRUD operations on a model.
+ - Use generics.* when you only want to allow some operations on a model
+ - Use APIView when you want to completely customize the behaviour.
 </details>
 
 <details>
